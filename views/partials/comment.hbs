@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="../css/comments.css"/>
+<div id="comment">
+    <h3>Send the comment</h3>
+    <form method="get">
+        <p>
+            <label for="login">Login:</label>
+            <input type="text" placeholder="type your login" name="login" required><br/>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="type your email" name="email"><br/>
+            <label for="url">URL:</label> 
+            <input type="url" id="url" name="url"><br/>
+            <label for="comment_field">Your comment:</label><br/>
+            <textarea id="comment_field" name="comment_field" placeholder="Write the comment"
+                cols="20" rows="3"></textarea>
+            <input type="submit" value="Send" />
+        </p>
+    </form>
+    {{#each comments}}
+        <article>
+            <img src="src\avatar1.png" alt="Avatar" style="width: 90px;">
+            <p><span>{{comments.name}}</span> <time datatime="2022-03-14T14:36-00:00">14.03.2022 17:50</time></p>
+            <p>{{comments.text}}</p>
+        </article>
+    {{/each}}
+</div>

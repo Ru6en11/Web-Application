@@ -1,0 +1,66 @@
+#comment article {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 8px 0;
+    opacity: 0.5;
+    background-image: -webkit-linear-gradient(bottom, rgb(156, 155, 155), white 50%);
+    box-shadow: 8px 8px 4px rgb(17, 17, 17);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#comment article:hover {
+    -webkit-text-shadow: 2px 2px red;
+    text-shadow: 2px 2px red;
+    transform: translate(-2px, -2px);
+    -webkit-box-shadow: 10px 10px 4px rgb(46, 45, 45);
+    box-shadow: 10px 10px 4px rgb(46, 45, 45);
+}
+#comment article:nth-of-type(even) {
+    background-image: -webkit-linear-gradient(bottom, rgb(8, 8, 8), rgb(117, 116, 116) 50%);
+}
+#comment article::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#comment article img {
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#comment article p{
+    color: rgb(15, 15, 15);
+    font-size: 15px;
+    line-height: 1;
+}
+#comment article span{
+    font-size: 15px;
+    margin-right: 7px;
+}
+@media (max-width: 500px) {
+    #comment article {
+      text-align: center;
+      word-wrap: break-word;
+    }
+    #comment article img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+  
+#footer{ 
+    border-top: 1px solid #ccc;
+    font-size: .8em;    
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+}
+#nav ul, #header h1, .wrapper, #footer p {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.wrapper, #nav, #header, #footer{
+    min-width: 768px;
+}

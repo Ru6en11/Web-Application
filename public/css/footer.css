@@ -1,0 +1,13 @@
+#footer{ 
+    border-top: 1px solid #ccc;
+    font-size: .8em;    
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+}
+#nav ul, #header h1, .wrapper, #footer p {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.wrapper, #nav, #header, #footer{
+    min-width: 768px;
+}
