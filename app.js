@@ -24,6 +24,8 @@ hbs.registerHelper("createCommentsList", function(array){
     return new hbs.SafeString("<ul>${result}</ul>")
 })
 
+///.fksafjsjfsalfkdjsalfjsakldfjdslkjfslkdjflskafklsajfklsaf
+
 app.use(express.static(__dirname + "/public"))
   
 app.use("/state", function(_, response){
